@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
     color: white;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
 }
 .contenedor {
     height: 100svh;
@@ -23,9 +25,13 @@ body {
     background-image: url(../img/bg.jpg);
     background-repeat: none;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 10px;
     border-top:2px solid #bff205;
@@ -35,16 +41,21 @@ header div.logo {
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    float: left;
+    height: 10vh;
+    display: flex;
+    align-items: center;
 }
 
 header div.logo span {
     color: #bff205;
     font-size: 1.4em;
+    margin-bottom: 1vh;
 }
 
 header nav {
-    float: right;
+    display: flex;
+    align-items: center;
+    height: 10vh;
 }
 
 header nav ul li {
@@ -69,7 +80,7 @@ header nav ul li a:hover {
 }
 
 div.hero {
-    clear: both;
+    
     padding: 15%;
 }
 
@@ -96,7 +107,8 @@ div.centrar {
 }
 
 div.centrar button {
-    padding:10px 30px;
+    height: 7vh;
+    width: 32vh;
     text-transform: uppercase;
     font-size: 1.3em;
     font-weight: bold;
@@ -106,42 +118,47 @@ div.centrar button {
     color:#152617;
 }
 
-div.centrar button:hover {
-    background-color: #6c7a00;
-    color: white;
-}
 div.centrar button a {
     color: #152617;
+    display: inline-block;
+    height: 7vh;
+    line-height: 7vh;
+    width: 32vh;
+    border-radius: 5px;
     text-decoration: none;
 }
 div.centrar button a:hover {
-    color: white;
     text-decoration: none;
+    background-color: #6c7a00;
+    color: white;
+    transition: 0.2s ease-in-out;
 }
 
 main {
-    clear: both;
     padding: 3%;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 main section h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 4vh;
     text-transform: uppercase;
     font-size: 2em; 
     font-weight: lighter;
     text-decoration: underline #bff205;
 }
 hr {
-    clear: both;
+    
     border-color: #ccff00;
-    margin: 30px 0 30px 0;
+    margin: 4vh 0 4vh 0;
 }
 main section h2 {
     width: 12%;
     padding: 10px;
+    margin: 4vh 0 6vh 0;
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -149,22 +166,27 @@ main section h2 {
 }
 .carta {
     margin: 0 auto;
+    padding-bottom: 3vh;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .card  {
-    margin: 30px;
+
     background-color: #1d1d1d;
-    /* border: 1px solid #BFF205; */
     border-radius: 10px;
     width: 20%;
-    /* height:500px; */
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(200, 200, 200, 0.2);
+    
 }
 .product {
     border-radius: 10px 10px 0 0;
 }
 div.product img.full {
-    padding: 2px;
+    
     border-radius: 10px 10px 0 0;
     max-width: 100%;
 }
@@ -205,14 +227,15 @@ div.product img.full {
 }
 
 section#nosotros {
-    clear: both;
-    margin-top: 30px;
     width: 100%;
-    height: 560px;
+    height: 100vh;
+    display: flex;
 }
 section#nosotros .left {
     width: 50%;
-    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1d1d1d;
     height: 100%;
 }
@@ -222,20 +245,21 @@ section#nosotros img {
 section#nosotros .right {
     width: 50%;
     background-color: #95be00;
-    float: right;
     height: 100%;
     padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 section#nosotros .right h1 {
-    margin-left: 20px;
     text-transform: uppercase;
     font-size:4em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding: 25px;
+    padding: 3vh;
     text-align: center;
-    color: black;
+    color: white;
     
 }
 
@@ -247,41 +271,51 @@ section#nosotros .right h1 span {
 section#nosotros .right p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-    line-height: 1.3em;
-    text-transform: uppercase;
+    line-height: 1.9em;
     text-align: center;
 }
 
-section#contacto {
+#contacto {
     width: 100%;
     background-color: #0D0D0D;
-    height: 400px;
-    padding: 3%;
-    clear: both;
+    padding: 2%;
+    display: flex;
+    align-items: center;
 }
 
 section#contacto .contactoLeft {
     width: 50%;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 section#contacto h2 {
     text-transform: uppercase;
-    font-size: 2em;
+    margin: 1vh 0 4vh 0 ;
     padding: 1%;
     border: 1px solid #bff205;
     width: 38%;
-    margin-bottom: 1.5em;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
 }
 
 section#contacto .contactoLeft form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+
 }
 
 section#contacto .contactoLeft form label {
     text-transform: uppercase;
-    font-weight: bold;
     margin-bottom: 16px;
+    font-size: 3vh;
 }
 section#contacto .contactoLeft form input {
     margin-bottom: 10px;
@@ -294,7 +328,10 @@ section#contacto .contactoLeft form input {
     background-color: transparent;
 }
 section#contacto .contactoLeft form input:focus {
-    border:none;
+   
+    border: solid 3px grey;
+    outline: none;
+
 }
 section#contacto .contactoLeft form textarea {
     margin-bottom: 10px;
@@ -305,19 +342,39 @@ section#contacto .contactoLeft form textarea {
     height: 150px;
     color: #a2cd05;
     background-color: transparent;   
+    resize: none;
+
 }
+
+section#contacto .contactoLeft form textarea:focus{
+  
+  outline: none;
+  border: solid 3px grey;
+  resize: none;
+
+}
+
 section#contacto .contactoLeft form button {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
     color: black;
     background-color: #bff205;
     border-radius: 10px;
+    margin-top: 10px;
+}
+
+section#contacto .contactoLeft form button:hover{
+
+    background-color: #6c7a00;
+    color: white;
+    transition: 0.2s ease-in-out;
+
 }
 section#contacto .contactoRight {
-    float: right;
+    
     width: 50%;
     font-size: 2em;
     padding: 8%;
@@ -335,14 +392,12 @@ section#contacto .contactoRight ul li {
 }
 
 footer {
-    clear: both;
     width: 100%;
-    margin-top: 200px;
-    height: 70px;
     text-align: center;
     /* background: linear-gradient(#0D0D0D 1px, #bff205); */
-    padding: 3%;
+    padding: 2%;
     text-transform: uppercase;
     font-weight: bold;
     color: #a2cd05;
 }
+
