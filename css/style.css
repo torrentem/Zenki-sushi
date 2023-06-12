@@ -1,0 +1,348 @@
+ /* 
+.Boost-—-Website-Design-1-hex { color: #152617; }
+.Boost-—-Website-Design-2-hex { color: #BFF205; }
+.Boost-—-Website-Design-3-hex { color: #84A60A; }
+.Boost-—-Website-Design-4-hex { color: #D7F205; }
+.Boost-—-Website-Design-5-hex { color: #0D0D0D; } 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor {
+    height: 100svh;
+    width: 100%;
+    background-image: url(../img/bg.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    border-top:2px solid #bff205;
+}
+header div.logo {
+    margin-left: 20px;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float: left;
+}
+
+header div.logo span {
+    color: #bff205;
+    font-size: 1.4em;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul li {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 30px;
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #bff205;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul li a:hover {
+    border-bottom:3px solid #bff205;
+    border-top:3px solid #bff205;
+    /* color: #152617; */
+    border-radius: 5px;
+}
+
+div.hero {
+    clear: both;
+    padding: 15%;
+}
+
+div.hero h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size: 4em;
+}
+
+div.hero p {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+div.centrar {
+    text-align: center;
+    width: 100%;
+    padding: 25px;
+}
+
+div.centrar button {
+    padding:10px 30px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #bff205;
+    color:#152617;
+}
+
+div.centrar button:hover {
+    background-color: #6c7a00;
+    color: white;
+}
+div.centrar button a {
+    color: #152617;
+    text-decoration: none;
+}
+div.centrar button a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    clear: both;
+    padding: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+main section h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 2em; 
+    font-weight: lighter;
+    text-decoration: underline #bff205;
+}
+hr {
+    clear: both;
+    border-color: #ccff00;
+    margin: 30px 0 30px 0;
+}
+main section h2 {
+    width: 12%;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    border:2px solid #bff205;
+}
+.carta {
+    margin: 0 auto;
+    width: 100%;
+}
+.card  {
+    margin: 30px;
+    background-color: #1d1d1d;
+    /* border: 1px solid #BFF205; */
+    border-radius: 10px;
+    width: 20%;
+    /* height:500px; */
+    float: left;
+}
+.product {
+    border-radius: 10px 10px 0 0;
+}
+div.product img.full {
+    padding: 2px;
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+}
+.card h4 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #bff205;
+}
+.card p {
+    padding: 10px;
+    line-height: 1.4em;
+    font-size:0.9em;
+    text-transform: lowercase;
+}
+.card p::first-letter {
+    text-transform: uppercase;
+}
+.card .centrarCard {
+    text-align: center;
+}
+
+.card button {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    border: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    color: #152617;
+    background: linear-gradient(#bff205,#a2cd05);
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: linear-gradient(#ccff00,#bff205);
+}
+
+section#nosotros {
+    clear: both;
+    margin-top: 30px;
+    width: 100%;
+    height: 560px;
+}
+section#nosotros .left {
+    width: 50%;
+    float: left;
+    background-color: #1d1d1d;
+    height: 100%;
+}
+section#nosotros img {
+    width: 80%;
+}
+section#nosotros .right {
+    width: 50%;
+    background-color: #95be00;
+    float: right;
+    height: 100%;
+    padding: 3%;
+}
+
+section#nosotros .right h1 {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size:4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 25px;
+    text-align: center;
+    color: black;
+    
+}
+
+section#nosotros .right h1 span {
+    color: #bff205;
+    font-size: 1.4em;
+}
+
+section#nosotros .right p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section#contacto {
+    width: 100%;
+    background-color: #0D0D0D;
+    height: 400px;
+    padding: 3%;
+    clear: both;
+}
+
+section#contacto .contactoLeft {
+    width: 50%;
+    float: left;
+}
+
+section#contacto h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 1%;
+    border: 1px solid #bff205;
+    width: 38%;
+    margin-bottom: 1.5em;
+}
+
+section#contacto .contactoLeft form {
+    width: 100%;
+}
+
+section#contacto .contactoLeft form label {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+section#contacto .contactoLeft form input {
+    margin-bottom: 10px;
+    border: 3px solid #a2cd05;
+    border-radius: 10px;
+    height: 40px;
+    padding: 15px;
+    width: 100%;
+    color: #a2cd05;
+    background-color: transparent;
+}
+section#contacto .contactoLeft form input:focus {
+    border:none;
+}
+section#contacto .contactoLeft form textarea {
+    margin-bottom: 10px;
+    border: 3px solid #a2cd05;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    height: 150px;
+    color: #a2cd05;
+    background-color: transparent;   
+}
+section#contacto .contactoLeft form button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    background-color: #bff205;
+    border-radius: 10px;
+}
+section#contacto .contactoRight {
+    float: right;
+    width: 50%;
+    font-size: 2em;
+    padding: 8%;
+    margin: 0 auto;
+}
+
+section#contacto .contactoRight ul {
+    list-style-type: none;   
+}
+section#contacto .contactoRight ul li {
+    background-color: #bff2057b;
+    padding: 10px;
+    margin: 15px;   
+    transform: skewy(-4deg);
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    margin-top: 200px;
+    height: 70px;
+    text-align: center;
+    /* background: linear-gradient(#0D0D0D 1px, #bff205); */
+    padding: 3%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #a2cd05;
+}
