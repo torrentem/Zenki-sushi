@@ -298,7 +298,7 @@ section#contacto h2 {
     border: 1px solid #bff205;
     width: 38%;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 2em;
 }
@@ -307,7 +307,7 @@ section#contacto .contactoLeft form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
 
 }
@@ -321,7 +321,7 @@ section#contacto .contactoLeft form input {
     margin-bottom: 10px;
     border: 3px solid #a2cd05;
     border-radius: 10px;
-    height: 40px;
+    height: 60px;
     padding: 15px;
     width: 100%;
     color: #a2cd05;
@@ -361,6 +361,7 @@ section#contacto .contactoLeft form button {
     text-transform: uppercase;
     font-weight: bold;
     color: black;
+    border: none;
     background-color: #bff205;
     border-radius: 10px;
     margin-top: 10px;
