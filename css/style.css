@@ -35,6 +35,7 @@ header {
     width: 100%;
     padding: 10px;
     border-top:2px solid #bff205;
+    
 }
 header div.logo {
     margin-left: 20px;
@@ -70,13 +71,33 @@ header nav ul li a {
     padding: 10px;
     color: #bff205;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
 
-header nav ul li a:hover {
-    border-bottom:3px solid #bff205;
-    border-top:3px solid #bff205;
-    /* color: #152617; */
-    border-radius: 5px;
+header nav ul li a:hover{
+
+    color:#e4ff76;
+
+}
+
+header nav ul li a::before {
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e4ff76;
+    transition: width 0.3s ease;
+
+}
+
+header nav ul li a:hover::before {
+
+    width: 100%;
+
+
 }
 
 div.hero {
@@ -295,7 +316,7 @@ section#contacto h2 {
     text-transform: uppercase;
     margin: 1vh 0 4vh 0 ;
     padding: 1%;
-    border: 1px solid #bff205;
+    border: 2px solid #bff205;
     width: 38%;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -314,8 +335,10 @@ section#contacto .contactoLeft form {
 
 section#contacto .contactoLeft form label {
     text-transform: uppercase;
+    padding-left: 1vh;
     margin-bottom: 16px;
     font-size: 3vh;
+    border-left: 3px solid #bff205;
 }
 section#contacto .contactoLeft form input {
     margin-bottom: 10px;
@@ -326,10 +349,12 @@ section#contacto .contactoLeft form input {
     width: 100%;
     color: #a2cd05;
     background-color: transparent;
+    
+    
 }
 section#contacto .contactoLeft form input:focus {
    
-    border: solid 3px grey;
+    border: solid 3px rgb(192, 190, 190);
     outline: none;
 
 }
@@ -384,11 +409,25 @@ section#contacto .contactoRight {
 section#contacto .contactoRight ul {
     list-style-type: none;   
 }
+
+section#contacto .contactoRight ul a {
+
+    color: white;
+    text-decoration: none;
+
+}
+
 section#contacto .contactoRight ul li {
     background-color: #bff2057b;
     padding: 10px;
     margin: 15px;   
     transform: skewy(-4deg);
+}
+
+section#contacto .contactoRight ul li a:hover {
+
+    color: grey;
+
 }
 
 footer {
