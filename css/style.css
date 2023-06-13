@@ -12,6 +12,19 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  background-color: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bff205; 
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
 body {
     background-color: #0d0d0d;
     color: white;
@@ -19,6 +32,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     user-select: none;
 }
+
+.main-container {
+
+    position: relative;
+
+}
+
 .contenedor {
     height: 100svh;
     width: 100%;
@@ -29,14 +49,14 @@ body {
     flex-direction: column;
 }
 
-header {
+.nav-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 10px;
     border-top:2px solid #bff205;
 }
-header div.logo {
+.nav-container div.logo {
     margin-left: 20px;
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
@@ -46,26 +66,26 @@ header div.logo {
     align-items: center;
 }
 
-header div.logo span {
+.nav-container div.logo span {
     color: #bff205;
     font-size: 1.4em;
     margin-bottom: 1vh;
 }
 
-header nav {
+.nav-container nav {
     display: flex;
     align-items: center;
     height: 10vh;
 }
 
-header nav ul li {
+.nav-container nav ul li {
     text-transform: uppercase;
     font-weight: bold;
     padding: 30px;
     display: inline-block;
 }
 
-header nav ul li a {
+.nav-container nav ul li a {
     text-decoration: none;
     padding: 10px;
     color: #bff205;
@@ -73,13 +93,13 @@ header nav ul li a {
     position: relative;
 }
 
-header nav ul li a:hover{
+.nav-container nav ul li a:hover{
 
     color:#e4ff76;
 
 }
 
-header nav ul li a::before {
+.nav-container nav ul li a::before {
 
     content: '';
     position: absolute;
@@ -92,7 +112,7 @@ header nav ul li a::before {
 
 }
 
-header nav ul li a:hover::before {
+.nav-container nav ul li a:hover::before {
 
     width: 100%;
 
@@ -153,6 +173,13 @@ div.centrar button a:hover {
     transition: 0.2s ease-in-out;
 }
 
+.second-nav {
+    top: 0;
+    position: sticky;
+    background-color: #0D0D0D;
+    padding: 0 10px 0 10px;
+}
+
 main {
     padding: 3%;
     font-family: Arial, Helvetica, sans-serif;
@@ -174,6 +201,13 @@ hr {
     border-color: #ccff00;
     margin: 4vh 0 4vh 0;
 }
+
+#carta {
+
+    padding-top: 13vh;
+
+}
+
 main section h2 {
     width: 12%;
     padding: 10px;
@@ -295,9 +329,9 @@ div.product img.full {
 }
 
 #contacto {
+    padding: 10vh 4vh 1vh 4vh;
     width: 100%;
     background-color: #0D0D0D;
-    padding: 2%;
     display: flex;
     align-items: center;
 }
