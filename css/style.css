@@ -35,7 +35,6 @@ header {
     width: 100%;
     padding: 10px;
     border-top:2px solid #bff205;
-    
 }
 header div.logo {
     margin-left: 20px;
@@ -99,7 +98,6 @@ header nav ul li a:hover::before {
 
 
 }
-
 div.hero {
     
     padding: 15%;
@@ -247,12 +245,12 @@ div.product img.full {
     background: linear-gradient(#ccff00,#bff205);
 }
 
-section#nosotros {
+#nosotros {
     width: 100%;
     height: 100vh;
     display: flex;
 }
-section#nosotros .left {
+#nosotros .left {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -260,10 +258,10 @@ section#nosotros .left {
     background-color: #1d1d1d;
     height: 100%;
 }
-section#nosotros img {
+#nosotros img {
     width: 80%;
 }
-section#nosotros .right {
+#nosotros .right {
     width: 50%;
     background-color: #95be00;
     height: 100%;
@@ -273,7 +271,7 @@ section#nosotros .right {
     justify-content: center;
 }
 
-section#nosotros .right h1 {
+#nosotros .right h1 {
     text-transform: uppercase;
     font-size:4em;
     font-family: Arial, Helvetica, sans-serif;
@@ -284,12 +282,12 @@ section#nosotros .right h1 {
     
 }
 
-section#nosotros .right h1 span {
+#nosotros .right h1 span {
     color: #bff205;
     font-size: 1.4em;
 }
 
-section#nosotros .right p {
+#nosotros .right p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     line-height: 1.9em;
@@ -304,7 +302,7 @@ section#nosotros .right p {
     align-items: center;
 }
 
-section#contacto .contactoLeft {
+#contacto .contactoLeft {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -312,53 +310,53 @@ section#contacto .contactoLeft {
     
 }
 
-section#contacto h2 {
+#contacto h2 {
     text-transform: uppercase;
     margin: 1vh 0 4vh 0 ;
     padding: 1%;
-    border: 2px solid #bff205;
+    border: 3px solid #bff205;
     width: 38%;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 2em;
 }
 
-section#contacto .contactoLeft form {
+#contacto .contactoLeft form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
 
 }
 
-section#contacto .contactoLeft form label {
+#contacto .contactoLeft form label {
     text-transform: uppercase;
-    padding-left: 1vh;
     margin-bottom: 16px;
     font-size: 3vh;
     border-left: 3px solid #bff205;
+    padding-left: 1vh;
+
+
 }
-section#contacto .contactoLeft form input {
+#contacto .contactoLeft form input {
     margin-bottom: 10px;
     border: 3px solid #a2cd05;
     border-radius: 10px;
-    height: 40px;
+    height: 60px;
     padding: 15px;
     width: 100%;
     color: #a2cd05;
     background-color: transparent;
-    
-    
 }
-section#contacto .contactoLeft form input:focus {
+#contacto .contactoLeft form input:focus {
    
-    border: solid 3px rgb(192, 190, 190);
+    border: solid 3px grey;
     outline: none;
 
 }
-section#contacto .contactoLeft form textarea {
+#contacto .contactoLeft form textarea {
     margin-bottom: 10px;
     border: 3px solid #a2cd05;
     border-radius: 10px;
@@ -371,7 +369,7 @@ section#contacto .contactoLeft form textarea {
 
 }
 
-section#contacto .contactoLeft form textarea:focus{
+#contacto .contactoLeft form textarea:focus{
   
   outline: none;
   border: solid 3px grey;
@@ -379,26 +377,27 @@ section#contacto .contactoLeft form textarea:focus{
 
 }
 
-section#contacto .contactoLeft form button {
+#contacto .contactoLeft form button {
     width: 100%;
     padding: 10px;
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
     color: black;
+    border: none;
     background-color: #bff205;
     border-radius: 10px;
     margin-top: 10px;
 }
 
-section#contacto .contactoLeft form button:hover{
+#contacto .contactoLeft form button:hover{
 
     background-color: #6c7a00;
     color: white;
     transition: 0.2s ease-in-out;
 
 }
-section#contacto .contactoRight {
+#contacto .contactoRight {
     
     width: 50%;
     font-size: 2em;
@@ -406,29 +405,29 @@ section#contacto .contactoRight {
     margin: 0 auto;
 }
 
-section#contacto .contactoRight ul {
+#contacto .contactoRight ul {
     list-style-type: none;   
 }
-
-section#contacto .contactoRight ul a {
-
-    color: white;
-    text-decoration: none;
-
-}
-
-section#contacto .contactoRight ul li {
+#contacto .contactoRight ul li {
     background-color: #bff2057b;
     padding: 10px;
     margin: 15px;   
     transform: skewy(-4deg);
 }
 
-section#contacto .contactoRight ul li a:hover {
+#contacto .contactoRight ul li a {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+#contacto .contactoRight ul li a:hover {
 
     color: grey;
 
 }
+
 
 footer {
     width: 100%;
