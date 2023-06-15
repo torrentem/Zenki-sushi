@@ -180,6 +180,11 @@ div.centrar button a:hover {
     padding: 0 10px 0 10px;
 }
 
+.second-nav nav li i {
+    color: #bff205;
+    cursor: pointer;
+}
+
 main {
     padding: 3%;
     font-family: Arial, Helvetica, sans-serif;
@@ -203,9 +208,7 @@ hr {
 }
 
 #carta {
-
     padding-top: 13vh;
-
 }
 
 main section h2 {
@@ -235,11 +238,10 @@ main section h2 {
     box-shadow: 0 2px 4px rgba(200, 200, 200, 0.2);
     
 }
-.product {
+.imagen-container {
     border-radius: 10px 10px 0 0;
 }
-div.product img.full {
-    
+div.imagen-container img.imagen-card {
     border-radius: 10px 10px 0 0;
     max-width: 100%;
 }
@@ -249,6 +251,7 @@ div.product img.full {
     color: #bff205;
 }
 .card p {
+    height: 100%;
     padding: 10px;
     line-height: 1.4em;
     font-size:0.9em;
@@ -257,9 +260,7 @@ div.product img.full {
 .card p::first-letter {
     text-transform: uppercase;
 }
-.card .centrarCard {
-    text-align: center;
-}
+
 
 .card button {
     margin-top: 10px;
